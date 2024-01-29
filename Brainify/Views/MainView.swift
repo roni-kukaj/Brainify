@@ -1,21 +1,15 @@
-//
-//  ContentView.swift
-//  Brainify
-//
-//  Created by Roni Kukaj on 29.1.24.
-//
 
 import SwiftUI
 
 struct MainView: View {
+    @StateObject var viewModel = MainViewViewModel()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        if viewModel.isSignedIn, !viewModel.currentUserId.isEmpty {
+            DeckView()
+        } else{
+            RegisterView()
         }
-        .padding()
     }
 }
 
