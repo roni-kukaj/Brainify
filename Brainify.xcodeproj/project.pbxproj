@@ -8,17 +8,68 @@
 
 /* Begin PBXBuildFile section */
 		E80821E22B6844F10071DA21 /* BrainifyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80821E12B6844F10071DA21 /* BrainifyApp.swift */; };
-		E80821E42B6844F10071DA21 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80821E32B6844F10071DA21 /* ContentView.swift */; };
+		E80821E42B6844F10071DA21 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80821E32B6844F10071DA21 /* MainView.swift */; };
 		E80821E62B6844F30071DA21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E80821E52B6844F30071DA21 /* Assets.xcassets */; };
 		E80821E92B6844F30071DA21 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E80821E82B6844F30071DA21 /* Preview Assets.xcassets */; };
+		E80821F12B6845F40071DA21 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = E80821F02B6845F40071DA21 /* FirebaseAnalytics */; };
+		E80821F32B6845F40071DA21 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = E80821F22B6845F40071DA21 /* FirebaseAnalyticsOnDeviceConversion */; };
+		E80821F52B6845F50071DA21 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E80821F42B6845F50071DA21 /* FirebaseAnalyticsSwift */; };
+		E80821F72B6845F50071DA21 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = E80821F62B6845F50071DA21 /* FirebaseAnalyticsWithoutAdIdSupport */; };
+		E80821F92B6845F50071DA21 /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = E80821F82B6845F50071DA21 /* FirebaseAppCheck */; };
+		E80821FF2B684BDB0071DA21 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E80821FE2B684BDA0071DA21 /* GoogleService-Info.plist */; };
+		E80822012B684CBD0071DA21 /* DeckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80822002B684CBD0071DA21 /* DeckView.swift */; };
+		E80822032B684CCC0071DA21 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80822022B684CCC0071DA21 /* SettingsView.swift */; };
+		E80822062B684CDF0071DA21 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80822052B684CDF0071DA21 /* AboutView.swift */; };
+		E80822082B684CE90071DA21 /* AddDeckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80822072B684CE90071DA21 /* AddDeckView.swift */; };
+		E808220A2B684CF30071DA21 /* SingleDeckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80822092B684CF30071DA21 /* SingleDeckView.swift */; };
+		E808220C2B684D050071DA21 /* EditDeckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E808220B2B684D050071DA21 /* EditDeckView.swift */; };
+		E808220E2B684D0C0071DA21 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E808220D2B684D0C0071DA21 /* ProfileView.swift */; };
+		E80822102B684D150071DA21 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E808220F2B684D150071DA21 /* LoginView.swift */; };
+		E80822122B684D1B0071DA21 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80822112B684D1B0071DA21 /* RegisterView.swift */; };
+		E80822142B684D4A0071DA21 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80822132B684D4A0071DA21 /* User.swift */; };
+		E80822162B684D540071DA21 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80822152B684D540071DA21 /* Deck.swift */; };
+		E80822182B684D600071DA21 /* Flashcard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80822172B684D600071DA21 /* Flashcard.swift */; };
+		E808221A2B684D910071DA21 /* MainViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80822192B684D910071DA21 /* MainViewViewModel.swift */; };
+		E808221C2B684D970071DA21 /* DeckViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E808221B2B684D970071DA21 /* DeckViewViewModel.swift */; };
+		E808221E2B684DA30071DA21 /* SettingsViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E808221D2B684DA30071DA21 /* SettingsViewViewModel.swift */; };
+		E80822202B684DAD0071DA21 /* AboutViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E808221F2B684DAD0071DA21 /* AboutViewViewModel.swift */; };
+		E80822222B684DBF0071DA21 /* AddDeckViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80822212B684DBF0071DA21 /* AddDeckViewViewModel.swift */; };
+		E80822242B684DD60071DA21 /* SingleDeckViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80822232B684DD60071DA21 /* SingleDeckViewViewModel.swift */; };
+		E80822262B684DE10071DA21 /* EditDeckViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80822252B684DE10071DA21 /* EditDeckViewViewModel.swift */; };
+		E80822282B684DF30071DA21 /* ProfileViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80822272B684DF30071DA21 /* ProfileViewViewModel.swift */; };
+		E808222A2B684DFE0071DA21 /* LoginViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80822292B684DFE0071DA21 /* LoginViewViewModel.swift */; };
+		E808222C2B684E070071DA21 /* RegisterViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E808222B2B684E070071DA21 /* RegisterViewViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E80821DE2B6844F10071DA21 /* Brainify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brainify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E80821E12B6844F10071DA21 /* BrainifyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrainifyApp.swift; sourceTree = "<group>"; };
-		E80821E32B6844F10071DA21 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E80821E32B6844F10071DA21 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		E80821E52B6844F30071DA21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E80821E82B6844F30071DA21 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E80821FE2B684BDA0071DA21 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E80822002B684CBD0071DA21 /* DeckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckView.swift; sourceTree = "<group>"; };
+		E80822022B684CCC0071DA21 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		E80822052B684CDF0071DA21 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		E80822072B684CE90071DA21 /* AddDeckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDeckView.swift; sourceTree = "<group>"; };
+		E80822092B684CF30071DA21 /* SingleDeckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleDeckView.swift; sourceTree = "<group>"; };
+		E808220B2B684D050071DA21 /* EditDeckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDeckView.swift; sourceTree = "<group>"; };
+		E808220D2B684D0C0071DA21 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		E808220F2B684D150071DA21 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		E80822112B684D1B0071DA21 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		E80822132B684D4A0071DA21 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E80822152B684D540071DA21 /* Deck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
+		E80822172B684D600071DA21 /* Flashcard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flashcard.swift; sourceTree = "<group>"; };
+		E80822192B684D910071DA21 /* MainViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewViewModel.swift; sourceTree = "<group>"; };
+		E808221B2B684D970071DA21 /* DeckViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckViewViewModel.swift; sourceTree = "<group>"; };
+		E808221D2B684DA30071DA21 /* SettingsViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewViewModel.swift; sourceTree = "<group>"; };
+		E808221F2B684DAD0071DA21 /* AboutViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewViewModel.swift; sourceTree = "<group>"; };
+		E80822212B684DBF0071DA21 /* AddDeckViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDeckViewViewModel.swift; sourceTree = "<group>"; };
+		E80822232B684DD60071DA21 /* SingleDeckViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleDeckViewViewModel.swift; sourceTree = "<group>"; };
+		E80822252B684DE10071DA21 /* EditDeckViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDeckViewViewModel.swift; sourceTree = "<group>"; };
+		E80822272B684DF30071DA21 /* ProfileViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewViewModel.swift; sourceTree = "<group>"; };
+		E80822292B684DFE0071DA21 /* LoginViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewViewModel.swift; sourceTree = "<group>"; };
+		E808222B2B684E070071DA21 /* RegisterViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +77,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E80821F52B6845F50071DA21 /* FirebaseAnalyticsSwift in Frameworks */,
+				E80821F12B6845F40071DA21 /* FirebaseAnalytics in Frameworks */,
+				E80821F32B6845F40071DA21 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
+				E80821F92B6845F50071DA21 /* FirebaseAppCheck in Frameworks */,
+				E80821F72B6845F50071DA21 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,9 +107,10 @@
 		E80821E02B6844F10071DA21 /* Brainify */ = {
 			isa = PBXGroup;
 			children = (
-				E80821E12B6844F10071DA21 /* BrainifyApp.swift */,
-				E80821E32B6844F10071DA21 /* ContentView.swift */,
-				E80821E52B6844F30071DA21 /* Assets.xcassets */,
+				E80821FD2B684BCD0071DA21 /* Other */,
+				E80821FC2B684BC40071DA21 /* Models */,
+				E80821FB2B684BBF0071DA21 /* ViewModels */,
+				E80821FA2B684BB80071DA21 /* Views */,
 				E80821E72B6844F30071DA21 /* Preview Content */,
 			);
 			path = Brainify;
@@ -65,6 +122,60 @@
 				E80821E82B6844F30071DA21 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E80821FA2B684BB80071DA21 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E80821E32B6844F10071DA21 /* MainView.swift */,
+				E80822002B684CBD0071DA21 /* DeckView.swift */,
+				E80822022B684CCC0071DA21 /* SettingsView.swift */,
+				E80822052B684CDF0071DA21 /* AboutView.swift */,
+				E80822072B684CE90071DA21 /* AddDeckView.swift */,
+				E80822092B684CF30071DA21 /* SingleDeckView.swift */,
+				E808220B2B684D050071DA21 /* EditDeckView.swift */,
+				E808220D2B684D0C0071DA21 /* ProfileView.swift */,
+				E808220F2B684D150071DA21 /* LoginView.swift */,
+				E80822112B684D1B0071DA21 /* RegisterView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E80821FB2B684BBF0071DA21 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E80822192B684D910071DA21 /* MainViewViewModel.swift */,
+				E808221B2B684D970071DA21 /* DeckViewViewModel.swift */,
+				E808221D2B684DA30071DA21 /* SettingsViewViewModel.swift */,
+				E808221F2B684DAD0071DA21 /* AboutViewViewModel.swift */,
+				E80822212B684DBF0071DA21 /* AddDeckViewViewModel.swift */,
+				E80822232B684DD60071DA21 /* SingleDeckViewViewModel.swift */,
+				E80822252B684DE10071DA21 /* EditDeckViewViewModel.swift */,
+				E80822272B684DF30071DA21 /* ProfileViewViewModel.swift */,
+				E80822292B684DFE0071DA21 /* LoginViewViewModel.swift */,
+				E808222B2B684E070071DA21 /* RegisterViewViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E80821FC2B684BC40071DA21 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E80822132B684D4A0071DA21 /* User.swift */,
+				E80822152B684D540071DA21 /* Deck.swift */,
+				E80822172B684D600071DA21 /* Flashcard.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E80821FD2B684BCD0071DA21 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				E80821E52B6844F30071DA21 /* Assets.xcassets */,
+				E80821FE2B684BDA0071DA21 /* GoogleService-Info.plist */,
+				E80821E12B6844F10071DA21 /* BrainifyApp.swift */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +194,13 @@
 			dependencies = (
 			);
 			name = Brainify;
+			packageProductDependencies = (
+				E80821F02B6845F40071DA21 /* FirebaseAnalytics */,
+				E80821F22B6845F40071DA21 /* FirebaseAnalyticsOnDeviceConversion */,
+				E80821F42B6845F50071DA21 /* FirebaseAnalyticsSwift */,
+				E80821F62B6845F50071DA21 /* FirebaseAnalyticsWithoutAdIdSupport */,
+				E80821F82B6845F50071DA21 /* FirebaseAppCheck */,
+			);
 			productName = Brainify;
 			productReference = E80821DE2B6844F10071DA21 /* Brainify.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +229,9 @@
 				Base,
 			);
 			mainGroup = E80821D52B6844F10071DA21;
+			packageReferences = (
+				E80821EF2B6845F40071DA21 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = E80821DF2B6844F10071DA21 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +248,7 @@
 			files = (
 				E80821E92B6844F30071DA21 /* Preview Assets.xcassets in Resources */,
 				E80821E62B6844F30071DA21 /* Assets.xcassets in Resources */,
+				E80821FF2B684BDB0071DA21 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +259,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E80821E42B6844F10071DA21 /* ContentView.swift in Sources */,
+				E80822262B684DE10071DA21 /* EditDeckViewViewModel.swift in Sources */,
+				E80822242B684DD60071DA21 /* SingleDeckViewViewModel.swift in Sources */,
+				E808222C2B684E070071DA21 /* RegisterViewViewModel.swift in Sources */,
+				E80822222B684DBF0071DA21 /* AddDeckViewViewModel.swift in Sources */,
+				E808221C2B684D970071DA21 /* DeckViewViewModel.swift in Sources */,
+				E80822122B684D1B0071DA21 /* RegisterView.swift in Sources */,
+				E80821E42B6844F10071DA21 /* MainView.swift in Sources */,
+				E808222A2B684DFE0071DA21 /* LoginViewViewModel.swift in Sources */,
+				E808220E2B684D0C0071DA21 /* ProfileView.swift in Sources */,
+				E80822282B684DF30071DA21 /* ProfileViewViewModel.swift in Sources */,
+				E80822032B684CCC0071DA21 /* SettingsView.swift in Sources */,
 				E80821E22B6844F10071DA21 /* BrainifyApp.swift in Sources */,
+				E808220A2B684CF30071DA21 /* SingleDeckView.swift in Sources */,
+				E80822182B684D600071DA21 /* Flashcard.swift in Sources */,
+				E80822082B684CE90071DA21 /* AddDeckView.swift in Sources */,
+				E808221A2B684D910071DA21 /* MainViewViewModel.swift in Sources */,
+				E808220C2B684D050071DA21 /* EditDeckView.swift in Sources */,
+				E80822202B684DAD0071DA21 /* AboutViewViewModel.swift in Sources */,
+				E80822142B684D4A0071DA21 /* User.swift in Sources */,
+				E80822162B684D540071DA21 /* Deck.swift in Sources */,
+				E80822012B684CBD0071DA21 /* DeckView.swift in Sources */,
+				E80822102B684D150071DA21 /* LoginView.swift in Sources */,
+				E808221E2B684DA30071DA21 /* SettingsViewViewModel.swift in Sources */,
+				E80822062B684CDF0071DA21 /* AboutView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +486,45 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E80821EF2B6845F40071DA21 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.20.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E80821F02B6845F40071DA21 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E80821EF2B6845F40071DA21 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		E80821F22B6845F40071DA21 /* FirebaseAnalyticsOnDeviceConversion */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E80821EF2B6845F40071DA21 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsOnDeviceConversion;
+		};
+		E80821F42B6845F50071DA21 /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E80821EF2B6845F40071DA21 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		E80821F62B6845F50071DA21 /* FirebaseAnalyticsWithoutAdIdSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E80821EF2B6845F40071DA21 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsWithoutAdIdSupport;
+		};
+		E80821F82B6845F50071DA21 /* FirebaseAppCheck */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E80821EF2B6845F40071DA21 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAppCheck;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E80821D62B6844F10071DA21 /* Project object */;
 }
