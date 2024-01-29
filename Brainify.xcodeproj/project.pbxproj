@@ -40,6 +40,7 @@
 		E808222A2B684DFE0071DA21 /* LoginViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80822292B684DFE0071DA21 /* LoginViewViewModel.swift */; };
 		E808222C2B684E070071DA21 /* RegisterViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E808222B2B684E070071DA21 /* RegisterViewViewModel.swift */; };
 		E808222E2B6855A80071DA21 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E808222D2B6855A80071DA21 /* HeaderView.swift */; };
+		E80822302B685BBB0071DA21 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E808222F2B685BBB0071DA21 /* CustomButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +73,7 @@
 		E80822292B684DFE0071DA21 /* LoginViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewViewModel.swift; sourceTree = "<group>"; };
 		E808222B2B684E070071DA21 /* RegisterViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewViewModel.swift; sourceTree = "<group>"; };
 		E808222D2B6855A80071DA21 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		E808222F2B685BBB0071DA21 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 				E808220F2B684D150071DA21 /* LoginView.swift */,
 				E80822112B684D1B0071DA21 /* RegisterView.swift */,
 				E808222D2B6855A80071DA21 /* HeaderView.swift */,
+				E808222F2B685BBB0071DA21 /* CustomButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E80822302B685BBB0071DA21 /* CustomButton.swift in Sources */,
 				E80822262B684DE10071DA21 /* EditDeckViewViewModel.swift in Sources */,
 				E80822242B684DD60071DA21 /* SingleDeckViewViewModel.swift in Sources */,
 				E808222C2B684E070071DA21 /* RegisterViewViewModel.swift in Sources */,
