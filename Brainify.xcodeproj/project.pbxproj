@@ -39,6 +39,7 @@
 		E80822282B684DF30071DA21 /* ProfileViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80822272B684DF30071DA21 /* ProfileViewViewModel.swift */; };
 		E808222A2B684DFE0071DA21 /* LoginViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80822292B684DFE0071DA21 /* LoginViewViewModel.swift */; };
 		E808222C2B684E070071DA21 /* RegisterViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E808222B2B684E070071DA21 /* RegisterViewViewModel.swift */; };
+		E808222E2B6855A80071DA21 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E808222D2B6855A80071DA21 /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +71,7 @@
 		E80822272B684DF30071DA21 /* ProfileViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewViewModel.swift; sourceTree = "<group>"; };
 		E80822292B684DFE0071DA21 /* LoginViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewViewModel.swift; sourceTree = "<group>"; };
 		E808222B2B684E070071DA21 /* RegisterViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewViewModel.swift; sourceTree = "<group>"; };
+		E808222D2B6855A80071DA21 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 				E808220D2B684D0C0071DA21 /* ProfileView.swift */,
 				E808220F2B684D150071DA21 /* LoginView.swift */,
 				E80822112B684D1B0071DA21 /* RegisterView.swift */,
+				E808222D2B6855A80071DA21 /* HeaderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 				E808220A2B684CF30071DA21 /* SingleDeckView.swift in Sources */,
 				E80822182B684D600071DA21 /* Flashcard.swift in Sources */,
 				E80822082B684CE90071DA21 /* AddDeckView.swift in Sources */,
+				E808222E2B6855A80071DA21 /* HeaderView.swift in Sources */,
 				E808221A2B684D910071DA21 /* MainViewViewModel.swift in Sources */,
 				E808220C2B684D050071DA21 /* EditDeckView.swift in Sources */,
 				E80822202B684DAD0071DA21 /* AboutViewViewModel.swift in Sources */,
