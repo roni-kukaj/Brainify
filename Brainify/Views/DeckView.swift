@@ -17,10 +17,13 @@ struct DeckView: View {
             .navigationTitle("Decks")
             .toolbar {
                 Button {
-                    
+                    viewModel.showingAddDeckView = true
                 } label: {
                     Image(systemName: "folder.badge.plus")
                 }
+            }
+            .sheet(isPresented: $viewModel.showingAddDeckView) {
+                AddDeckView()
             }
         }
     }
