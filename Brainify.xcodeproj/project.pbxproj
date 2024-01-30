@@ -17,7 +17,7 @@
 		E80821F72B6845F50071DA21 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = E80821F62B6845F50071DA21 /* FirebaseAnalyticsWithoutAdIdSupport */; };
 		E80821F92B6845F50071DA21 /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = E80821F82B6845F50071DA21 /* FirebaseAppCheck */; };
 		E80821FF2B684BDB0071DA21 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E80821FE2B684BDA0071DA21 /* GoogleService-Info.plist */; };
-		E80822012B684CBD0071DA21 /* DeckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80822002B684CBD0071DA21 /* DeckView.swift */; };
+		E80822012B684CBD0071DA21 /* DecksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80822002B684CBD0071DA21 /* DecksView.swift */; };
 		E80822032B684CCC0071DA21 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80822022B684CCC0071DA21 /* SettingsView.swift */; };
 		E80822062B684CDF0071DA21 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80822052B684CDF0071DA21 /* AboutView.swift */; };
 		E80822082B684CE90071DA21 /* AddDeckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80822072B684CE90071DA21 /* AddDeckView.swift */; };
@@ -30,7 +30,7 @@
 		E80822162B684D540071DA21 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80822152B684D540071DA21 /* Deck.swift */; };
 		E80822182B684D600071DA21 /* Flashcard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80822172B684D600071DA21 /* Flashcard.swift */; };
 		E808221A2B684D910071DA21 /* MainViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80822192B684D910071DA21 /* MainViewViewModel.swift */; };
-		E808221C2B684D970071DA21 /* DeckViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E808221B2B684D970071DA21 /* DeckViewViewModel.swift */; };
+		E808221C2B684D970071DA21 /* DecksViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E808221B2B684D970071DA21 /* DecksViewViewModel.swift */; };
 		E808221E2B684DA30071DA21 /* SettingsViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E808221D2B684DA30071DA21 /* SettingsViewViewModel.swift */; };
 		E80822202B684DAD0071DA21 /* AboutViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E808221F2B684DAD0071DA21 /* AboutViewViewModel.swift */; };
 		E80822222B684DBF0071DA21 /* AddDeckViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80822212B684DBF0071DA21 /* AddDeckViewViewModel.swift */; };
@@ -69,6 +69,8 @@
 		E80822642B6860470071DA21 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = E80822632B6860470071DA21 /* FirebaseStorage */; };
 		E80822662B6860470071DA21 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = E80822652B6860470071DA21 /* FirebaseStorageCombine-Community */; };
 		E808226A2B68623A0071DA21 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80822692B68623A0071DA21 /* Extensions.swift */; };
+		E808226E2B6889EB0071DA21 /* FlashcardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E808226D2B6889EB0071DA21 /* FlashcardsView.swift */; };
+		E80822702B6889F60071DA21 /* FlashcardsViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E808226F2B6889F60071DA21 /* FlashcardsViewViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,7 +80,7 @@
 		E80821E52B6844F30071DA21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E80821E82B6844F30071DA21 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E80821FE2B684BDA0071DA21 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		E80822002B684CBD0071DA21 /* DeckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckView.swift; sourceTree = "<group>"; };
+		E80822002B684CBD0071DA21 /* DecksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecksView.swift; sourceTree = "<group>"; };
 		E80822022B684CCC0071DA21 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		E80822052B684CDF0071DA21 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		E80822072B684CE90071DA21 /* AddDeckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDeckView.swift; sourceTree = "<group>"; };
@@ -91,7 +93,7 @@
 		E80822152B684D540071DA21 /* Deck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
 		E80822172B684D600071DA21 /* Flashcard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flashcard.swift; sourceTree = "<group>"; };
 		E80822192B684D910071DA21 /* MainViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewViewModel.swift; sourceTree = "<group>"; };
-		E808221B2B684D970071DA21 /* DeckViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckViewViewModel.swift; sourceTree = "<group>"; };
+		E808221B2B684D970071DA21 /* DecksViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecksViewViewModel.swift; sourceTree = "<group>"; };
 		E808221D2B684DA30071DA21 /* SettingsViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewViewModel.swift; sourceTree = "<group>"; };
 		E808221F2B684DAD0071DA21 /* AboutViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewViewModel.swift; sourceTree = "<group>"; };
 		E80822212B684DBF0071DA21 /* AddDeckViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDeckViewViewModel.swift; sourceTree = "<group>"; };
@@ -103,6 +105,8 @@
 		E808222D2B6855A80071DA21 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		E808222F2B685BBB0071DA21 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		E80822692B68623A0071DA21 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		E808226D2B6889EB0071DA21 /* FlashcardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardsView.swift; sourceTree = "<group>"; };
+		E808226F2B6889F60071DA21 /* FlashcardsViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardsViewViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,7 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				E80821E32B6844F10071DA21 /* MainView.swift */,
-				E80822002B684CBD0071DA21 /* DeckView.swift */,
+				E80822002B684CBD0071DA21 /* DecksView.swift */,
 				E80822022B684CCC0071DA21 /* SettingsView.swift */,
 				E80822052B684CDF0071DA21 /* AboutView.swift */,
 				E80822072B684CE90071DA21 /* AddDeckView.swift */,
@@ -200,6 +204,7 @@
 				E80822112B684D1B0071DA21 /* RegisterView.swift */,
 				E808222D2B6855A80071DA21 /* HeaderView.swift */,
 				E808222F2B685BBB0071DA21 /* CustomButton.swift */,
+				E808226D2B6889EB0071DA21 /* FlashcardsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -208,7 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				E80822192B684D910071DA21 /* MainViewViewModel.swift */,
-				E808221B2B684D970071DA21 /* DeckViewViewModel.swift */,
+				E808221B2B684D970071DA21 /* DecksViewViewModel.swift */,
 				E808221D2B684DA30071DA21 /* SettingsViewViewModel.swift */,
 				E808221F2B684DAD0071DA21 /* AboutViewViewModel.swift */,
 				E80822212B684DBF0071DA21 /* AddDeckViewViewModel.swift */,
@@ -217,6 +222,7 @@
 				E80822272B684DF30071DA21 /* ProfileViewViewModel.swift */,
 				E80822292B684DFE0071DA21 /* LoginViewViewModel.swift */,
 				E808222B2B684E070071DA21 /* RegisterViewViewModel.swift */,
+				E808226F2B6889F60071DA21 /* FlashcardsViewViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -358,14 +364,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				E80822302B685BBB0071DA21 /* CustomButton.swift in Sources */,
+				E808226E2B6889EB0071DA21 /* FlashcardsView.swift in Sources */,
 				E808226A2B68623A0071DA21 /* Extensions.swift in Sources */,
 				E80822262B684DE10071DA21 /* EditDeckViewViewModel.swift in Sources */,
 				E80822242B684DD60071DA21 /* SingleDeckViewViewModel.swift in Sources */,
 				E808222C2B684E070071DA21 /* RegisterViewViewModel.swift in Sources */,
 				E80822222B684DBF0071DA21 /* AddDeckViewViewModel.swift in Sources */,
-				E808221C2B684D970071DA21 /* DeckViewViewModel.swift in Sources */,
+				E808221C2B684D970071DA21 /* DecksViewViewModel.swift in Sources */,
 				E80822122B684D1B0071DA21 /* RegisterView.swift in Sources */,
 				E80821E42B6844F10071DA21 /* MainView.swift in Sources */,
+				E80822702B6889F60071DA21 /* FlashcardsViewViewModel.swift in Sources */,
 				E808222A2B684DFE0071DA21 /* LoginViewViewModel.swift in Sources */,
 				E808220E2B684D0C0071DA21 /* ProfileView.swift in Sources */,
 				E80822282B684DF30071DA21 /* ProfileViewViewModel.swift in Sources */,
@@ -380,7 +388,7 @@
 				E80822202B684DAD0071DA21 /* AboutViewViewModel.swift in Sources */,
 				E80822142B684D4A0071DA21 /* User.swift in Sources */,
 				E80822162B684D540071DA21 /* Deck.swift in Sources */,
-				E80822012B684CBD0071DA21 /* DeckView.swift in Sources */,
+				E80822012B684CBD0071DA21 /* DecksView.swift in Sources */,
 				E80822102B684D150071DA21 /* LoginView.swift in Sources */,
 				E808221E2B684DA30071DA21 /* SettingsViewViewModel.swift in Sources */,
 				E80822062B684CDF0071DA21 /* AboutView.swift in Sources */,

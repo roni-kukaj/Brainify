@@ -2,11 +2,26 @@
 import SwiftUI
 
 struct SingleDeckView: View {
+    let deck: Deck
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack (alignment: .leading){
+            Text(deck.deckName)
+                .font(.title)
+                .bold()
+            Text(deck.deckSubject)
+                .font(.subheadline)
+                
+        }
     }
+        
 }
 
 #Preview {
-    SingleDeckView()
+    SingleDeckView(
+        deck: .init(
+            id: "123",
+            deckName: "Deck1",
+            deckSubject: "Math"
+        )
+    )
 }

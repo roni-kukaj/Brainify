@@ -1,6 +1,6 @@
 
 import Foundation
 
-class DeckViewViewModel: ObservableObject {
+class DecksViewViewModel: ObservableObject {
     @Published var showingAddDeckView = false
 }

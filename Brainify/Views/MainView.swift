@@ -8,14 +8,14 @@ struct MainView: View {
         if viewModel.isSignedIn, !viewModel.currentUserId.isEmpty {
             accountView
         } else{
-            LoginView()
+            RegisterView()
         }
     }
     
     @ViewBuilder
     var accountView: some View {
         TabView {
-            DeckView(userId: "")
+            DecksView(userId: "")
                 .tabItem {
                     Label("Decks", systemImage: "folder")
                 }
