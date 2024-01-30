@@ -23,7 +23,7 @@ struct DeckView: View {
                 }
             }
             .sheet(isPresented: $viewModel.showingAddDeckView) {
-                AddDeckView()
+                AddDeckView(newItemPresented: $viewModel.showingAddDeckView)
             }
         }
     }
