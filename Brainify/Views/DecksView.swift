@@ -1,18 +1,22 @@
 
 import SwiftUI
+import FirebaseFirestoreSwift
 
-struct DeckView: View {
-    @StateObject var viewModel = DeckViewViewModel()
-    private let userId: String
-    
+struct DecksView: View {
+    @StateObject var viewModel = DecksViewViewModel()
+    @FirestoreQuery var decks: [Deck]
+        
     init(userId: String) {
-        self.userId = userId
+        self._decks = FirestoreQuery(collectionPath: "users/\(userId)/decks")
     }
     
     var body: some View {
         NavigationView {
             VStack {
-                
+                List(decks) { deck in
+                    SingleDeckView(deck: deck)
+                }
+                .listStyle(PlainListStyle())
             }
             .navigationTitle("Decks")
             .toolbar {
@@ -30,5 +34,5 @@ struct DeckView: View {
 }
 
 #Preview {
-    DeckView(userId: "")
+    DecksView(userId: "YtP3sqyR3yWVdHVKpBu970BENW43")
 }

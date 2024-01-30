@@ -7,7 +7,6 @@ import FirebaseAuth
 class AddDeckViewViewModel: ObservableObject {
     @Published var deckName = ""
     @Published var deckSubject = ""
-    @Published var color: Color = Color("#78C1F3")
     @Published var showAlert = false
     
     init() {
@@ -29,8 +28,7 @@ class AddDeckViewViewModel: ObservableObject {
         let newDeck = Deck(
             id: newId,
             deckName: deckName,
-            deckSubject: deckSubject,
-            color: String(describing: color)
+            deckSubject: deckSubject
         )
         
         let db = Firestore.firestore()

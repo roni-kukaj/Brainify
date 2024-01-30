@@ -17,8 +17,6 @@ struct AddDeckView: View {
                 
                 TextField("Enter deck subject", text: $viewModel.deckSubject)
                 
-                ColorPicker("Select a deck color", selection: $viewModel.color, supportsOpacity: false)
-                
                 CustomButton(title: "Save",
                              background: Color(hex: "#78C1F3")) {
                     if viewModel.canSave {
