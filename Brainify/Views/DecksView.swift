@@ -7,7 +7,9 @@ struct DecksView: View {
     @FirestoreQuery var decks: [Deck]
         
     init(userId: String) {
-        self._decks = FirestoreQuery(collectionPath: "users/\(userId)/decks")
+//        self._decks = FirestoreQuery(collectionPath: "users/\(userId)/decks")
+        self._decks = FirestoreQuery(collectionPath: "users/jT9OXBX7zBf2HM9zR6HnBMSpXkB3/decks")
+        print("This is something -\(userId)")
     }
     
     var body: some View {
@@ -15,6 +17,14 @@ struct DecksView: View {
             VStack {
                 List(decks) { deck in
                     SingleDeckView(deck: deck)
+                        .swipeActions {
+                            Button {
+                                viewModel.delete(id: deck.id)
+                            } label: {
+                                Text("Delete")
+                                    .tint(.red)
+                            }
+                        }
                 }
                 .listStyle(PlainListStyle())
             }

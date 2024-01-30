@@ -2,38 +2,39 @@
 import SwiftUI
 
 struct LoginView: View {
-    @StateObject var viewModel = RegisterViewViewModel()
+    @StateObject var viewModel = LoginViewViewModel()
 
     var body: some View {
         VStack {
+            // Header
             HeaderView(title: "Log In",
-            subtitle: "Continue your journey!",
-            angle: 15,
-            background: Color(hex: "#78C1F3"))
-        }
-
-        Form {
-            if !viewModel.errorMessage.isEmpty {
-                Text(viewModel.errorMessage)
-                    .foreGroundcolor(.red)
-            }
-
-            TextField("Email Address", text: $viewModel.email)
-                .textFieldStyle(DefaultTextFieldStyle())
-                .autocorrectionDisabled(true)
+                       subtitle: "Continue your journey!",
+                       angle: 15,
+                       background: Color(hex: "#78C1F3"))
             
-            SecureField("Password", text: $viewModel.password)
-                .textFieldStyle(DefaultTextFieldStyle())
-                .autocorrectionDisabled(true)
-
-            CustomButton(title: "Log In", background: .green) {
-                viewModel.login()
+            Form {
+                if !viewModel.errorMessage.isEmpty {
+                    Text(viewModel.errorMessage)
+                        .foregroundColor(.red)
+                }
+                
+                TextField("Email Address", text: $viewModel.email)
+                    .textFieldStyle(DefaultTextFieldStyle())
+                    .autocorrectionDisabled(true)
+                
+                SecureField("Password", text: $viewModel.password)
+                    .textFieldStyle(DefaultTextFieldStyle())
+                    .autocorrectionDisabled(true)
+                
+                CustomButton(title: "Log In", background: .green) {
+                    viewModel.login()
+                }
+                .padding()
             }
-            .padding()
+            .offset(y: -50)
+            
+            Spacer()
         }
-        .offset(y: -50)
-
-        Spacer()
     }
 }
 
