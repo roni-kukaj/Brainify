@@ -71,6 +71,8 @@
 		E808226A2B68623A0071DA21 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80822692B68623A0071DA21 /* Extensions.swift */; };
 		E808226E2B6889EB0071DA21 /* FlashcardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E808226D2B6889EB0071DA21 /* FlashcardsView.swift */; };
 		E80822702B6889F60071DA21 /* FlashcardsViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E808226F2B6889F60071DA21 /* FlashcardsViewViewModel.swift */; };
+		E80822722B68AE120071DA21 /* AddFlashcardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80822712B68AE120071DA21 /* AddFlashcardView.swift */; };
+		E80822742B68AE260071DA21 /* AddFlashcardViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80822732B68AE260071DA21 /* AddFlashcardViewViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -107,6 +109,8 @@
 		E80822692B68623A0071DA21 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		E808226D2B6889EB0071DA21 /* FlashcardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardsView.swift; sourceTree = "<group>"; };
 		E808226F2B6889F60071DA21 /* FlashcardsViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardsViewViewModel.swift; sourceTree = "<group>"; };
+		E80822712B68AE120071DA21 /* AddFlashcardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFlashcardView.swift; sourceTree = "<group>"; };
+		E80822732B68AE260071DA21 /* AddFlashcardViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFlashcardViewViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +209,7 @@
 				E808222D2B6855A80071DA21 /* HeaderView.swift */,
 				E808222F2B685BBB0071DA21 /* CustomButton.swift */,
 				E808226D2B6889EB0071DA21 /* FlashcardsView.swift */,
+				E80822712B68AE120071DA21 /* AddFlashcardView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -223,6 +228,7 @@
 				E80822292B684DFE0071DA21 /* LoginViewViewModel.swift */,
 				E808222B2B684E070071DA21 /* RegisterViewViewModel.swift */,
 				E808226F2B6889F60071DA21 /* FlashcardsViewViewModel.swift */,
+				E80822732B68AE260071DA21 /* AddFlashcardViewViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -364,6 +370,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E80822302B685BBB0071DA21 /* CustomButton.swift in Sources */,
+				E80822742B68AE260071DA21 /* AddFlashcardViewViewModel.swift in Sources */,
 				E808226E2B6889EB0071DA21 /* FlashcardsView.swift in Sources */,
 				E808226A2B68623A0071DA21 /* Extensions.swift in Sources */,
 				E80822262B684DE10071DA21 /* EditDeckViewViewModel.swift in Sources */,
@@ -388,6 +395,7 @@
 				E80822202B684DAD0071DA21 /* AboutViewViewModel.swift in Sources */,
 				E80822142B684D4A0071DA21 /* User.swift in Sources */,
 				E80822162B684D540071DA21 /* Deck.swift in Sources */,
+				E80822722B68AE120071DA21 /* AddFlashcardView.swift in Sources */,
 				E80822012B684CBD0071DA21 /* DecksView.swift in Sources */,
 				E80822102B684D150071DA21 /* LoginView.swift in Sources */,
 				E808221E2B684DA30071DA21 /* SettingsViewViewModel.swift in Sources */,
