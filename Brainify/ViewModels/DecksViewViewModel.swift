@@ -19,5 +19,7 @@ class DecksViewViewModel: ObservableObject {
             .collection("decks")
             .document(id)
             .delete()
+    func delete(id: String) {
+        print()
     }
 }

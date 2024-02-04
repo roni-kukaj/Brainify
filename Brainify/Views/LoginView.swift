@@ -6,6 +6,7 @@ struct LoginView: View {
 
     var body: some View {
         VStack {
+            // Header
             HeaderView(title: "Log In",
                    subtitle: "Continue your journey!",
                    angle: 15,
@@ -46,18 +47,29 @@ struct LoginView: View {
                 .textFieldStyle(DefaultTextFieldStyle())
                 .autocorrectionDisabled(true)
             
-            SecureField("Password", text: $viewModel.password)
-                .textFieldStyle(DefaultTextFieldStyle())
-                .autocorrectionDisabled(true)
-
-            CustomButton(title: "Log In", background: .green) {
-                viewModel.login()
+            Form {
+                if !viewModel.errorMessage.isEmpty {
+                    Text(viewModel.errorMessage)
+                        .foregroundColor(.red)
+                }
+                
+                TextField("Email Address", text: $viewModel.email)
+                    .textFieldStyle(DefaultTextFieldStyle())
+                    .autocorrectionDisabled(true)
+                
+                SecureField("Password", text: $viewModel.password)
+                    .textFieldStyle(DefaultTextFieldStyle())
+                    .autocorrectionDisabled(true)
+                
+                CustomButton(title: "Log In", background: .green) {
+                    viewModel.login()
+                }
+                .padding()
             }
-            .padding()
+            .offset(y: -50)
+            
+            Spacer()
         }
-        .offset(y: -50)
-
-        Spacer()
     }
 }
 
