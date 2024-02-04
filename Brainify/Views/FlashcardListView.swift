@@ -1,10 +1,9 @@
 
-
 import SwiftUI
 import FirebaseFirestoreSwift
 
-struct FlashcardsView: View {
-    @StateObject var viewModel: FlashcardsViewViewModel
+struct FlashcardListView: View {
+    @StateObject var viewModel: FlashcardListViewViewModel
     @FirestoreQuery var flashcards: [Flashcard]
     
     private var userId: String
@@ -12,7 +11,7 @@ struct FlashcardsView: View {
     
     init(userId: String, deckId: String){
         self._viewModel = StateObject(
-            wrappedValue: FlashcardsViewViewModel(userId: userId, deckId: deckId)
+            wrappedValue: FlashcardListViewViewModel(userId: userId, deckId: deckId)
             )
         self._flashcards = FirestoreQuery(collectionPath: "users/\(userId)/decks/\(deckId)/flashcards")
         self.userId = userId
@@ -24,7 +23,8 @@ struct FlashcardsView: View {
             VStack {
                 List(flashcards) { flashcard in
                     
-                    SingleFlashcardView(flashcard: flashcard)
+                    Text(flashcard.question)
+                    Text(flashcard.answer)
                 }
                 .listStyle(PlainListStyle())
             }
@@ -43,5 +43,5 @@ struct FlashcardsView: View {
 }
 
 #Preview {
-    FlashcardsView(userId: "", deckId: "")
+    FlashcardListView(userId: "", deckId: "")
 }
