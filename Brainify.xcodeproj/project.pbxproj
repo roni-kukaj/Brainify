@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9BBC9BA72B7029B300EAF9E9 /* FlashcardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBC9BA62B7029B300EAF9E9 /* FlashcardListView.swift */; };
+		9BBC9BA92B7029CD00EAF9E9 /* FlashcardListViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBC9BA82B7029CD00EAF9E9 /* FlashcardListViewViewModel.swift */; };
 		E80821E22B6844F10071DA21 /* BrainifyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80821E12B6844F10071DA21 /* BrainifyApp.swift */; };
 		E80821E42B6844F10071DA21 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80821E32B6844F10071DA21 /* MainView.swift */; };
 		E80821E62B6844F30071DA21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E80821E52B6844F30071DA21 /* Assets.xcassets */; };
@@ -76,6 +78,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9BBC9BA62B7029B300EAF9E9 /* FlashcardListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardListView.swift; sourceTree = "<group>"; };
+		9BBC9BA82B7029CD00EAF9E9 /* FlashcardListViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardListViewViewModel.swift; sourceTree = "<group>"; };
 		E80821DE2B6844F10071DA21 /* Brainify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brainify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E80821E12B6844F10071DA21 /* BrainifyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrainifyApp.swift; sourceTree = "<group>"; };
 		E80821E32B6844F10071DA21 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -210,6 +214,7 @@
 				E808222F2B685BBB0071DA21 /* CustomButton.swift */,
 				E808226D2B6889EB0071DA21 /* FlashcardsView.swift */,
 				E80822712B68AE120071DA21 /* AddFlashcardView.swift */,
+				9BBC9BA62B7029B300EAF9E9 /* FlashcardListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -229,6 +234,7 @@
 				E808222B2B684E070071DA21 /* RegisterViewViewModel.swift */,
 				E808226F2B6889F60071DA21 /* FlashcardsViewViewModel.swift */,
 				E80822732B68AE260071DA21 /* AddFlashcardViewViewModel.swift */,
+				9BBC9BA82B7029CD00EAF9E9 /* FlashcardListViewViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -375,6 +381,7 @@
 				E808226A2B68623A0071DA21 /* Extensions.swift in Sources */,
 				E80822262B684DE10071DA21 /* EditDeckViewViewModel.swift in Sources */,
 				E80822242B684DD60071DA21 /* SingleDeckViewViewModel.swift in Sources */,
+				9BBC9BA92B7029CD00EAF9E9 /* FlashcardListViewViewModel.swift in Sources */,
 				E808222C2B684E070071DA21 /* RegisterViewViewModel.swift in Sources */,
 				E80822222B684DBF0071DA21 /* AddDeckViewViewModel.swift in Sources */,
 				E808221C2B684D970071DA21 /* DecksViewViewModel.swift in Sources */,
@@ -386,6 +393,7 @@
 				E80822282B684DF30071DA21 /* ProfileViewViewModel.swift in Sources */,
 				E80822032B684CCC0071DA21 /* SettingsView.swift in Sources */,
 				E80821E22B6844F10071DA21 /* BrainifyApp.swift in Sources */,
+				9BBC9BA72B7029B300EAF9E9 /* FlashcardListView.swift in Sources */,
 				E808220A2B684CF30071DA21 /* SingleDeckView.swift in Sources */,
 				E80822182B684D600071DA21 /* Flashcard.swift in Sources */,
 				E80822082B684CE90071DA21 /* AddDeckView.swift in Sources */,
