@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		9BBC9BA72B7029B300EAF9E9 /* FlashcardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBC9BA62B7029B300EAF9E9 /* FlashcardListView.swift */; };
 		9BBC9BA92B7029CD00EAF9E9 /* FlashcardListViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBC9BA82B7029CD00EAF9E9 /* FlashcardListViewViewModel.swift */; };
+		9BBC9BAB2B702ABA00EAF9E9 /* SingleFlashcardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBC9BAA2B702ABA00EAF9E9 /* SingleFlashcardView.swift */; };
+		9BBC9BAD2B702AD000EAF9E9 /* SingleFlashcardViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBC9BAC2B702AD000EAF9E9 /* SingleFlashcardViewViewModel.swift */; };
 		E80821E22B6844F10071DA21 /* BrainifyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80821E12B6844F10071DA21 /* BrainifyApp.swift */; };
 		E80821E42B6844F10071DA21 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80821E32B6844F10071DA21 /* MainView.swift */; };
 		E80821E62B6844F30071DA21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E80821E52B6844F30071DA21 /* Assets.xcassets */; };
@@ -80,6 +82,8 @@
 /* Begin PBXFileReference section */
 		9BBC9BA62B7029B300EAF9E9 /* FlashcardListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardListView.swift; sourceTree = "<group>"; };
 		9BBC9BA82B7029CD00EAF9E9 /* FlashcardListViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardListViewViewModel.swift; sourceTree = "<group>"; };
+		9BBC9BAA2B702ABA00EAF9E9 /* SingleFlashcardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleFlashcardView.swift; sourceTree = "<group>"; };
+		9BBC9BAC2B702AD000EAF9E9 /* SingleFlashcardViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleFlashcardViewViewModel.swift; sourceTree = "<group>"; };
 		E80821DE2B6844F10071DA21 /* Brainify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brainify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E80821E12B6844F10071DA21 /* BrainifyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrainifyApp.swift; sourceTree = "<group>"; };
 		E80821E32B6844F10071DA21 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -215,6 +219,7 @@
 				E808226D2B6889EB0071DA21 /* FlashcardsView.swift */,
 				E80822712B68AE120071DA21 /* AddFlashcardView.swift */,
 				9BBC9BA62B7029B300EAF9E9 /* FlashcardListView.swift */,
+				9BBC9BAA2B702ABA00EAF9E9 /* SingleFlashcardView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -235,6 +240,7 @@
 				E808226F2B6889F60071DA21 /* FlashcardsViewViewModel.swift */,
 				E80822732B68AE260071DA21 /* AddFlashcardViewViewModel.swift */,
 				9BBC9BA82B7029CD00EAF9E9 /* FlashcardListViewViewModel.swift */,
+				9BBC9BAC2B702AD000EAF9E9 /* SingleFlashcardViewViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -390,6 +396,7 @@
 				E80822702B6889F60071DA21 /* FlashcardsViewViewModel.swift in Sources */,
 				E808222A2B684DFE0071DA21 /* LoginViewViewModel.swift in Sources */,
 				E808220E2B684D0C0071DA21 /* ProfileView.swift in Sources */,
+				9BBC9BAB2B702ABA00EAF9E9 /* SingleFlashcardView.swift in Sources */,
 				E80822282B684DF30071DA21 /* ProfileViewViewModel.swift in Sources */,
 				E80822032B684CCC0071DA21 /* SettingsView.swift in Sources */,
 				E80821E22B6844F10071DA21 /* BrainifyApp.swift in Sources */,
@@ -404,6 +411,7 @@
 				E80822142B684D4A0071DA21 /* User.swift in Sources */,
 				E80822162B684D540071DA21 /* Deck.swift in Sources */,
 				E80822722B68AE120071DA21 /* AddFlashcardView.swift in Sources */,
+				9BBC9BAD2B702AD000EAF9E9 /* SingleFlashcardViewViewModel.swift in Sources */,
 				E80822012B684CBD0071DA21 /* DecksView.swift in Sources */,
 				E80822102B684D150071DA21 /* LoginView.swift in Sources */,
 				E808221E2B684DA30071DA21 /* SettingsViewViewModel.swift in Sources */,

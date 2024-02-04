@@ -24,8 +24,7 @@ struct FlashcardsView: View {
             VStack {
                 List(flashcards) { flashcard in
                     
-                    Text(flashcard.question)
-                    Text(flashcard.answer)
+                    SingleFlashcardView(flashcard: flashcard)
                 }
                 .listStyle(PlainListStyle())
             }
