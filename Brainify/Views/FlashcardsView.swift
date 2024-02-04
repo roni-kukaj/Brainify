@@ -22,11 +22,21 @@ struct FlashcardsView: View {
     var body: some View {
         NavigationView {
             VStack {
-                List(flashcards) { flashcard in
-                    
-                    SingleFlashcardView(flashcard: flashcard)
+                VStack {
+                    ScrollView(.horizontal, showsIndicators: false){
+                        HStack{
+                            ForEach(flashcards) { flashcard in
+                                SingleFlashcardView(flashcard: flashcard)
+                                    .padding(6)
+                            }
+                            .frame(height: 280)
+                        }.padding(5)
+                    }
                 }
-                .listStyle(PlainListStyle())
+                Spacer()
+                NavigationLink(destination: FlashcardsView(userId: self.userId, deckId: self.deckId)) {
+                    
+                }
             }
         }
         .toolbar {
@@ -36,6 +46,7 @@ struct FlashcardsView: View {
                 Image(systemName: "plus")
             }
         }
+        .navigationTitle("Flashcards")
         .sheet(isPresented: $viewModel.showingAddFlashcardView) {
             AddFlashcardView(newAddedFlashcard: $viewModel.showingAddFlashcardView, deckId: self.$deckId)
         }
