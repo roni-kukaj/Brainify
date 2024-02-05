@@ -3,23 +3,30 @@ import SwiftUI
 import FirebaseFirestoreSwift
 
 struct FlashcardListView: View {
+    @Environment(\.presentationMode) var mode
     @StateObject var viewModel: FlashcardListViewViewModel
     @FirestoreQuery var flashcards: [Flashcard]
     
     private var userId: String
-    @State private var deckId: String
+    @State private var deckId = "0"
+    @State private var isPresenting: Bool = true
     
     init(userId: String, deckId: String){
+        self.userId = userId
         self._viewModel = StateObject(
             wrappedValue: FlashcardListViewViewModel(userId: userId, deckId: deckId)
             )
         self._flashcards = FirestoreQuery(collectionPath: "users/\(userId)/decks/\(deckId)/flashcards")
-        self.userId = userId
         self.deckId = deckId
     }
     
     var body: some View {
+        Text("")
         NavigationView {
+            
+        }
+        .fullScreenCover(isPresented: $isPresenting, content: {
+            
             VStack {
                 List(flashcards) { flashcard in
                     
@@ -28,17 +35,8 @@ struct FlashcardListView: View {
                 }
                 .listStyle(PlainListStyle())
             }
-        }
-        .toolbar {
-            Button {
-                viewModel.showingAddFlashcardView = true
-            } label: {
-                Image(systemName: "plus")
-            }
-        }
-        .sheet(isPresented: $viewModel.showingAddFlashcardView) {
-            AddFlashcardView(newAddedFlashcard: $viewModel.showingAddFlashcardView, deckId: self.$deckId)
-        }
+        })
+        .navigationTitle("All Flashcards")
     }
 }
 

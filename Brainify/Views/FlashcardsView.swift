@@ -22,6 +22,7 @@ struct FlashcardsView: View {
     var body: some View {
         NavigationView {
             VStack {
+                Spacer()
                 VStack {
                     ScrollView(.horizontal, showsIndicators: false){
                         HStack{
@@ -34,8 +35,20 @@ struct FlashcardsView: View {
                     }
                 }
                 Spacer()
-                NavigationLink(destination: FlashcardsView(userId: self.userId, deckId: self.deckId)) {
-                    
+                HStack{
+                    Spacer()
+                    NavigationLink {
+                        
+                        FlashcardListView(userId: self.userId, deckId: self.deckId)
+                    } label: {
+                        ZStack{
+                            Circle()
+                                .frame(width: 40, height: 40)
+                                .foregroundColor(Color(hex: "#E8E8E8"))
+                            Image(systemName: "pencil.and.outline")
+                        }
+                    }
+                    .padding(20)
                 }
             }
         }
