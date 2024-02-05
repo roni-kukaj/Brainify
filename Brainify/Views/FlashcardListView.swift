@@ -3,16 +3,18 @@ import SwiftUI
 import FirebaseFirestoreSwift
 
 struct FlashcardListView: View {
-    @Environment(\.presentationMode) var mode
     @StateObject var viewModel: FlashcardListViewViewModel
     @FirestoreQuery var flashcards: [Flashcard]
         
     private var userId: String
+    private static var editFlashcard = Flashcard(id: "", question: "", answer: "")
+    private var deck_id: String
     @State private var deckId = "0"
     @State private var isPresenting: Bool = true
     
     init(userId: String, deckId: String){
         self.userId = userId
+        self.deck_id = deckId
         self._viewModel = StateObject(
             wrappedValue: FlashcardListViewViewModel(userId: userId, deckId: deckId)
             )
@@ -23,16 +25,31 @@ struct FlashcardListView: View {
     var body: some View {
         VStack {
             List(flashcards) { flashcard in
-                
-                Text(flashcard.question)
-                Text(flashcard.answer)
+                CustomRow(flashCard: flashcard){
+                    FlashcardListView.editFlashcard = flashcard
+                    viewModel.showingEditFlashcardView = true
+                }
+                .swipeActions() {
+                    HStack{
+                        Button{
+                            viewModel.delete(userId: userId, deckId: self.deck_id, flashcardId: flashcard.id)
+                        } label: {
+                            Text("Delete")
+                        }
+                        .tint(.red)
+                    }
+                }
             }
             .listStyle(PlainListStyle())
         }
         .navigationTitle("Edit Flashcards")
+        .sheet(isPresented: $viewModel.showingEditFlashcardView) {
+            EditFlashcardView(userId: userId, deckId: self.deck_id, flashcard: FlashcardListView.editFlashcard, newEdit: $viewModel.showingEditFlashcardView)
+        }
     }
 }
 
-#Preview {
-    FlashcardListView(userId: "", deckId: "")
-}
+//#Preview {
+//    FlashcardListView(userId: "", deckId: "")
+
+//}
