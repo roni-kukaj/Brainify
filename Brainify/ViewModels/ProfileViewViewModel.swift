@@ -4,6 +4,8 @@ import FirebaseAuth
 import FirebaseFirestore
 
 class ProfileViewViewModel: ObservableObject {
+    @Published var user: User? = nil
+    
     init() {}
 
     func logOut() {
@@ -13,5 +15,8 @@ class ProfileViewViewModel: ObservableObject {
         catch {
             print(error)
         }   
+    }
+    
+    
     }
 }
