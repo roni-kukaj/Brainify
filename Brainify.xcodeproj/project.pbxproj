@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		9B95BEDC2B707BA600B7CB64 /* CustomRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B95BEDB2B707BA600B7CB64 /* CustomRow.swift */; };
+		9B95BEE02B70819000B7CB64 /* EditFlashcardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B95BEDF2B70819000B7CB64 /* EditFlashcardView.swift */; };
+		9B95BEE22B70819F00B7CB64 /* EditFlashcardViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B95BEE12B70819F00B7CB64 /* EditFlashcardViewViewModel.swift */; };
 		9BBC9BA72B7029B300EAF9E9 /* FlashcardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBC9BA62B7029B300EAF9E9 /* FlashcardListView.swift */; };
 		9BBC9BA92B7029CD00EAF9E9 /* FlashcardListViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBC9BA82B7029CD00EAF9E9 /* FlashcardListViewViewModel.swift */; };
 		9BBC9BAB2B702ABA00EAF9E9 /* SingleFlashcardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBC9BAA2B702ABA00EAF9E9 /* SingleFlashcardView.swift */; };
@@ -82,6 +84,8 @@
 
 /* Begin PBXFileReference section */
 		9B95BEDB2B707BA600B7CB64 /* CustomRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRow.swift; sourceTree = "<group>"; };
+		9B95BEDF2B70819000B7CB64 /* EditFlashcardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditFlashcardView.swift; sourceTree = "<group>"; };
+		9B95BEE12B70819F00B7CB64 /* EditFlashcardViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditFlashcardViewViewModel.swift; sourceTree = "<group>"; };
 		9BBC9BA62B7029B300EAF9E9 /* FlashcardListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardListView.swift; sourceTree = "<group>"; };
 		9BBC9BA82B7029CD00EAF9E9 /* FlashcardListViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardListViewViewModel.swift; sourceTree = "<group>"; };
 		9BBC9BAA2B702ABA00EAF9E9 /* SingleFlashcardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleFlashcardView.swift; sourceTree = "<group>"; };
@@ -223,6 +227,7 @@
 				9BBC9BA62B7029B300EAF9E9 /* FlashcardListView.swift */,
 				9BBC9BAA2B702ABA00EAF9E9 /* SingleFlashcardView.swift */,
 				9B95BEDB2B707BA600B7CB64 /* CustomRow.swift */,
+				9B95BEDF2B70819000B7CB64 /* EditFlashcardView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -244,6 +249,7 @@
 				E80822732B68AE260071DA21 /* AddFlashcardViewViewModel.swift */,
 				9BBC9BA82B7029CD00EAF9E9 /* FlashcardListViewViewModel.swift */,
 				9BBC9BAC2B702AD000EAF9E9 /* SingleFlashcardViewViewModel.swift */,
+				9B95BEE12B70819F00B7CB64 /* EditFlashcardViewViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -400,6 +406,7 @@
 				E808222A2B684DFE0071DA21 /* LoginViewViewModel.swift in Sources */,
 				E808220E2B684D0C0071DA21 /* ProfileView.swift in Sources */,
 				9BBC9BAB2B702ABA00EAF9E9 /* SingleFlashcardView.swift in Sources */,
+				9B95BEE22B70819F00B7CB64 /* EditFlashcardViewViewModel.swift in Sources */,
 				E80822282B684DF30071DA21 /* ProfileViewViewModel.swift in Sources */,
 				9B95BEDC2B707BA600B7CB64 /* CustomRow.swift in Sources */,
 				E80822032B684CCC0071DA21 /* SettingsView.swift in Sources */,
@@ -414,6 +421,7 @@
 				E80822202B684DAD0071DA21 /* AboutViewViewModel.swift in Sources */,
 				E80822142B684D4A0071DA21 /* User.swift in Sources */,
 				E80822162B684D540071DA21 /* Deck.swift in Sources */,
+				9B95BEE02B70819000B7CB64 /* EditFlashcardView.swift in Sources */,
 				E80822722B68AE120071DA21 /* AddFlashcardView.swift in Sources */,
 				9BBC9BAD2B702AD000EAF9E9 /* SingleFlashcardViewViewModel.swift in Sources */,
 				E80822012B684CBD0071DA21 /* DecksView.swift in Sources */,

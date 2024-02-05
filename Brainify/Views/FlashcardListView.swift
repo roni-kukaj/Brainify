@@ -22,7 +22,9 @@ struct FlashcardListView: View {
     var body: some View {
         VStack {
             List(flashcards) { flashcard in
-                CustomRow(flashCard: flashcard)
+                CustomRow(flashCard: flashcard){
+                    
+                }
             }
             .listStyle(PlainListStyle())
         }
