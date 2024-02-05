@@ -37,17 +37,17 @@ struct DecksView: View {
                     }
                     .listStyle(PlainListStyle())
                 }
-                .navigationTitle("Decks")
-                .toolbar {
-                    Button {
-                        viewModel.showingAddDeckView = true
-                    } label: {
-                        Image(systemName: "folder.badge.plus")
-                    }
+            }
+            .navigationTitle("Decks")
+            .toolbar {
+                Button {
+                    viewModel.showingAddDeckView = true
+                } label: {
+                    Image(systemName: "folder.badge.plus")
                 }
-                .sheet(isPresented: $viewModel.showingAddDeckView) {
-                    AddDeckView(newItemPresented: $viewModel.showingAddDeckView)
-                }
+            }
+            .sheet(isPresented: $viewModel.showingAddDeckView) {
+                AddDeckView(newItemPresented: $viewModel.showingAddDeckView)
             }
         }
     }
