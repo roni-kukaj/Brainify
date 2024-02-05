@@ -32,6 +32,7 @@ struct FlashcardListView: View {
             }
         }
         .navigationTitle("All Flashcards")
+        .navigationViewStyle(.stack)
     }
 }
 

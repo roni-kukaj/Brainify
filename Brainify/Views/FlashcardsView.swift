@@ -62,6 +62,7 @@ struct FlashcardsView: View {
             AddFlashcardView(newAddedFlashcard: $viewModel.showingAddFlashcardView, deckId: self.$deckId)
         }
         .navigationTitle("Flashcards")
+        .navigationViewStyle(.stack)
     }
 }
 
