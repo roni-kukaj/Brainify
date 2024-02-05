@@ -10,6 +10,8 @@ struct FlashcardsView: View {
     private var userId: String
     @State private var deckId: String
     
+    private var nextView = false;
+    
     init(userId: String, deckId: String){
         self._viewModel = StateObject(
             wrappedValue: FlashcardsViewViewModel(userId: userId, deckId: deckId)
@@ -20,35 +22,33 @@ struct FlashcardsView: View {
     }
     
     var body: some View {
-        NavigationView {
+        VStack {
+            Spacer()
             VStack {
-                Spacer()
-                VStack {
-                    ScrollView(.horizontal, showsIndicators: false){
-                        HStack{
-                            ForEach(flashcards) { flashcard in
-                                SingleFlashcardView(flashcard: flashcard)
-                                    .padding(6)
-                            }
-                            .frame(height: 280)
-                        }.padding(5)
-                    }
-                }
-                Spacer()
-                HStack{
-                    Spacer()
-                    NavigationLink {
-                        FlashcardListView(userId: self.userId, deckId: self.deckId)
-                    } label: {
-                        ZStack{
-                            Circle()
-                                .frame(width: 40, height: 40)
-                                .foregroundColor(Color(hex: "#E8E8E8"))
-                            Image(systemName: "pencil.and.outline")
+                ScrollView(.horizontal, showsIndicators: false){
+                    HStack{
+                        ForEach(flashcards) { flashcard in
+                            SingleFlashcardView(flashcard: flashcard)
+                                .padding(6)
                         }
-                    }
-                    .padding(20)
+                        .frame(height: 280)
+                    }.padding(5)
                 }
+            }
+            Spacer()
+            HStack{
+                Spacer()
+                NavigationLink {
+                    FlashcardListView(userId: self.userId, deckId: self.deckId)
+                } label: {
+                    ZStack {
+                        Circle()
+                            .frame(width: 40, height: 40)
+                            .foregroundColor(Color(hex: "#E8E8E8"))
+                        Image(systemName: "pencil.and.outline")
+                    }
+                }
+                .padding(20)
             }
         }
         .toolbar {
@@ -62,7 +62,6 @@ struct FlashcardsView: View {
             AddFlashcardView(newAddedFlashcard: $viewModel.showingAddFlashcardView, deckId: self.$deckId)
         }
         .navigationTitle("Flashcards")
-        .navigationViewStyle(.stack)
     }
 }
 

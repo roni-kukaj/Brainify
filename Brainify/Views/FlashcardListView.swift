@@ -6,7 +6,7 @@ struct FlashcardListView: View {
     @Environment(\.presentationMode) var mode
     @StateObject var viewModel: FlashcardListViewViewModel
     @FirestoreQuery var flashcards: [Flashcard]
-    
+        
     private var userId: String
     @State private var deckId = "0"
     @State private var isPresenting: Bool = true
@@ -21,18 +21,15 @@ struct FlashcardListView: View {
     }
     
     var body: some View {
-        NavigationView {
-            VStack {
-                List(flashcards) { flashcard in
-                    
-                    Text(flashcard.question)
-                    Text(flashcard.answer)
-                }
-                .listStyle(PlainListStyle())
+        VStack {
+            List(flashcards) { flashcard in
+                
+                Text(flashcard.question)
+                Text(flashcard.answer)
             }
+            .listStyle(PlainListStyle())
         }
-        .navigationTitle("All Flashcards")
-        .navigationViewStyle(.stack)
+        .navigationTitle("Edit Flashcards")
     }
 }
 
