@@ -1,8 +1,8 @@
 
 import Foundation
 
-enum SortModes {
-    case AZ
-    case ZA
-    case Random
+enum SortModes: String, CaseIterable {
+    case AZ = "AZ"
+    case ZA = "ZA"
+    case Random = "Random"
 }
