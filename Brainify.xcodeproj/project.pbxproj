@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B95BEDC2B707BA600B7CB64 /* CustomRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B95BEDB2B707BA600B7CB64 /* CustomRow.swift */; };
 		9BBC9BA72B7029B300EAF9E9 /* FlashcardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBC9BA62B7029B300EAF9E9 /* FlashcardListView.swift */; };
 		9BBC9BA92B7029CD00EAF9E9 /* FlashcardListViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBC9BA82B7029CD00EAF9E9 /* FlashcardListViewViewModel.swift */; };
 		9BBC9BAB2B702ABA00EAF9E9 /* SingleFlashcardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBC9BAA2B702ABA00EAF9E9 /* SingleFlashcardView.swift */; };
@@ -80,6 +81,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9B95BEDB2B707BA600B7CB64 /* CustomRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRow.swift; sourceTree = "<group>"; };
 		9BBC9BA62B7029B300EAF9E9 /* FlashcardListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardListView.swift; sourceTree = "<group>"; };
 		9BBC9BA82B7029CD00EAF9E9 /* FlashcardListViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardListViewViewModel.swift; sourceTree = "<group>"; };
 		9BBC9BAA2B702ABA00EAF9E9 /* SingleFlashcardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleFlashcardView.swift; sourceTree = "<group>"; };
@@ -220,6 +222,7 @@
 				E80822712B68AE120071DA21 /* AddFlashcardView.swift */,
 				9BBC9BA62B7029B300EAF9E9 /* FlashcardListView.swift */,
 				9BBC9BAA2B702ABA00EAF9E9 /* SingleFlashcardView.swift */,
+				9B95BEDB2B707BA600B7CB64 /* CustomRow.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -398,6 +401,7 @@
 				E808220E2B684D0C0071DA21 /* ProfileView.swift in Sources */,
 				9BBC9BAB2B702ABA00EAF9E9 /* SingleFlashcardView.swift in Sources */,
 				E80822282B684DF30071DA21 /* ProfileViewViewModel.swift in Sources */,
+				9B95BEDC2B707BA600B7CB64 /* CustomRow.swift in Sources */,
 				E80822032B684CCC0071DA21 /* SettingsView.swift in Sources */,
 				E80821E22B6844F10071DA21 /* BrainifyApp.swift in Sources */,
 				9BBC9BA72B7029B300EAF9E9 /* FlashcardListView.swift in Sources */,

@@ -3,7 +3,6 @@ import SwiftUI
 import FirebaseFirestoreSwift
 
 struct FlashcardListView: View {
-    @Environment(\.presentationMode) var mode
     @StateObject var viewModel: FlashcardListViewViewModel
     @FirestoreQuery var flashcards: [Flashcard]
         
@@ -23,9 +22,7 @@ struct FlashcardListView: View {
     var body: some View {
         VStack {
             List(flashcards) { flashcard in
-                
-                Text(flashcard.question)
-                Text(flashcard.answer)
+                CustomRow(flashCard: flashcard)
             }
             .listStyle(PlainListStyle())
         }

@@ -1,9 +1,12 @@
 
 
 import Foundation
+import SwiftUI
 
 class FlashcardListViewViewModel: ObservableObject {
     @Published var showingAddFlashcardView = false
+    
+    
     
     private let userId: String
     private let deckId: String
@@ -13,6 +16,6 @@ class FlashcardListViewViewModel: ObservableObject {
         self.userId = userId
         self.deckId = deckId
     }
+    
+    
 }
-
-
