@@ -6,12 +6,13 @@ struct EditFlashcardView: View {
     private var userId: String
     private var deckId: String
     private var flashcard: Flashcard
-    public static var newEdit = false
+    @Binding var newEdit: Bool
     
-    init(userId: String, deckId: String, flashcard: Flashcard){
+    init(userId: String, deckId: String, flashcard: Flashcard, newEdit: Binding<Bool>){
         self.userId = userId
         self.deckId = deckId
         self.flashcard = flashcard
+        self._newEdit = newEdit
     }
     
     var body: some View {
@@ -24,12 +25,12 @@ struct EditFlashcardView: View {
             Form {
                 TextField("Enter flashcard question", text: $viewModel.flashcardQuestion)
                 
-                TextField("Enter flashcard question", text: $viewModel.flashcardAnswer)
+                TextField("Enter flashcard answer", text: $viewModel.flashcardAnswer)
                 
                 CustomButton(title: "Save Changes", background: Color(hex: "#78C1F3")){
                     if viewModel.canSave {
                         viewModel.updateFlashcard(userId: userId, deckId: deckId, flashcardId: flashcard.id)
-                        EditFlashcardView.newEdit = false
+                        newEdit = false
                     }
                     else {
                         viewModel.showAlert = true

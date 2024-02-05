@@ -29,12 +29,22 @@ struct FlashcardListView: View {
                     FlashcardListView.editFlashcard = flashcard
                     viewModel.showingEditFlashcardView = true
                 }
+                .swipeActions() {
+                    HStack{
+                        Button{
+                            viewModel.delete(userId: userId, deckId: self.deck_id, flashcardId: flashcard.id)
+                        } label: {
+                            Text("Delete")
+                        }
+                        .tint(.red)
+                    }
+                }
             }
             .listStyle(PlainListStyle())
         }
         .navigationTitle("Edit Flashcards")
         .sheet(isPresented: $viewModel.showingEditFlashcardView) {
-            EditFlashcardView(userId: userId, deckId: self.deck_id, flashcard: FlashcardListView.editFlashcard)
+            EditFlashcardView(userId: userId, deckId: self.deck_id, flashcard: FlashcardListView.editFlashcard, newEdit: $viewModel.showingEditFlashcardView)
         }
     }
 }
