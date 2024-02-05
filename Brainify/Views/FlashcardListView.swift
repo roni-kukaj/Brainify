@@ -21,12 +21,7 @@ struct FlashcardListView: View {
     }
     
     var body: some View {
-        Text("")
         NavigationView {
-            
-        }
-        .fullScreenCover(isPresented: $isPresenting, content: {
-            
             VStack {
                 List(flashcards) { flashcard in
                     
@@ -35,7 +30,7 @@ struct FlashcardListView: View {
                 }
                 .listStyle(PlainListStyle())
             }
-        })
+        }
         .navigationTitle("All Flashcards")
     }
 }

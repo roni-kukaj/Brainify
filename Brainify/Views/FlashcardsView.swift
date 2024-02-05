@@ -38,7 +38,6 @@ struct FlashcardsView: View {
                 HStack{
                     Spacer()
                     NavigationLink {
-                        
                         FlashcardListView(userId: self.userId, deckId: self.deckId)
                     } label: {
                         ZStack{
@@ -59,10 +58,10 @@ struct FlashcardsView: View {
                 Image(systemName: "plus")
             }
         }
-        .navigationTitle("Flashcards")
         .sheet(isPresented: $viewModel.showingAddFlashcardView) {
             AddFlashcardView(newAddedFlashcard: $viewModel.showingAddFlashcardView, deckId: self.$deckId)
         }
+        .navigationTitle("Flashcards")
     }
 }
 
