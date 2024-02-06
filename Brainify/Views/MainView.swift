@@ -34,6 +34,7 @@ struct MainView: View {
                 .tabItem {
                     Label("Info", systemImage: "info.circle.fill")
                 }
+            
         }
     }
 }

@@ -2,7 +2,7 @@
 import FirebaseFirestore
 import FirebaseAuth
 import Foundation
-
+import FirebaseFirestoreSwift
 
 class RegisterViewViewModel: ObservableObject {
     @Published var name = ""
@@ -10,9 +10,10 @@ class RegisterViewViewModel: ObservableObject {
     @Published var password = ""
     @Published var confirmPassword = ""
     @Published var errorMessage = ""
+    @FirestoreQuery var users: [User]
     
     init() {
-        
+        self._users = FirestoreQuery(collectionPath: "users")
     }
     func register() {
         guard validate() else {
@@ -55,9 +56,24 @@ class RegisterViewViewModel: ObservableObject {
             return false
         }
         guard password.count >= 6 else {
+            errorMessage = "Your password cannot be shorter than 6 chacaters!"
             return false
         }
-        
+        guard doesUserExist(email: email) else {
+            errorMessage = "A user with this email exists!"
+            return false
+        }
         return true
     }
+    
+    private func doesUserExist(email: String) -> Bool {
+        for user in self.users {
+            if user.email == email{
+                return true
+            }
+        }
+        return false
+    }
+
 }
+

@@ -14,8 +14,10 @@ struct AddDeckView: View {
             Spacer()
             Form {
                 TextField("Enter deck name", text: $viewModel.deckName)
+                    .autocorrectionDisabled(true)
                 
                 TextField("Enter deck subject", text: $viewModel.deckSubject)
+                    .autocorrectionDisabled(true)
                 
                 CustomButton(title: "Save",
                              background: Color(hex: "#78C1F3")) {

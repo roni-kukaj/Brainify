@@ -10,7 +10,7 @@ struct RegisterView: View {
             HeaderView(title: "Register",
                        subtitle: "Start memorizing today!",
                        angle: 15,
-                       background: Color(hex: "#78C1F3"))
+                       background: Color(hex: "#9BE8D8"))
             
             Form{
                 if !viewModel.errorMessage.isEmpty {
@@ -29,12 +29,12 @@ struct RegisterView: View {
                 
                 SecureField("Password", text: $viewModel.password)
                     .textFieldStyle(DefaultTextFieldStyle())
-                    .autocapitalization(/*@START_MENU_TOKEN@*/.none/*@END_MENU_TOKEN@*/)
+                    .autocapitalization(.none)
                     .autocorrectionDisabled(true)
                 
                 SecureField("Confirm Password", text: $viewModel.confirmPassword)
                     .textFieldStyle(DefaultTextFieldStyle())
-                    .autocapitalization(/*@START_MENU_TOKEN@*/.none/*@END_MENU_TOKEN@*/)
+                    .autocapitalization(.none)
                     .autocorrectionDisabled(true)
                 
                 CustomButton(title: "Create Account", background: .green){
