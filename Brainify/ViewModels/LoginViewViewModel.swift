@@ -16,6 +16,10 @@ class LoginViewViewModel: ObservableObject {
             return
         }
         Auth.auth().signIn(withEmail: email, password: password)
+        guard Auth.auth().currentUser != nil else {
+            errorMessage = "Your email or password is wrong!"
+            return
+        }
     }
 
     private func validate() -> Bool {

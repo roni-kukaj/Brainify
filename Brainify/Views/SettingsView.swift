@@ -10,8 +10,6 @@ struct SettingsView: View {
     var body: some View {
         NavigationView {
             VStack {
-                CustomDropdownView(title: "Color Mode", prompt: "Select", options: colorOptions, selection: $viewModel.selectedColorMode)
-                    .padding(.bottom, 20)
                 
                 CustomDropdownView(title: "Sorting Method", prompt: "Select", options: sortOptions, selection: $viewModel.selectedSortMode)
                     .padding(.bottom, 20)
@@ -38,6 +36,6 @@ struct SettingsView: View {
     }
 }
 
-#Preview {
-    SettingsView()
-}
+//#Preview {
+//    SettingsView( colorScheme: <#Binding<ColorScheme?>#>)
+//}

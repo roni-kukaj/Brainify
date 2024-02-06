@@ -16,8 +16,10 @@ struct AddFlashcardView: View {
             Spacer()
             Form {
                 TextField("Enter question", text: $viewModel.question)
+                    .autocorrectionDisabled(true)
                 
                 TextField("Enter answer", text: $viewModel.answer)
+                    .autocorrectionDisabled(true)
                 
                 CustomButton(title: "Add Question",
                              background: Color(hex: "#78C1F3")) {

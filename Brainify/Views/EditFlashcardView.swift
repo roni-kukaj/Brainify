@@ -24,8 +24,10 @@ struct EditFlashcardView: View {
             Spacer()
             Form {
                 TextField("Enter flashcard question", text: $viewModel.flashcardQuestion)
+                    .autocorrectionDisabled(true)
                 
                 TextField("Enter flashcard answer", text: $viewModel.flashcardAnswer)
+                    .autocorrectionDisabled(true)
                 
                 CustomButton(title: "Save Changes", background: Color(hex: "#78C1F3")){
                     if viewModel.canSave {

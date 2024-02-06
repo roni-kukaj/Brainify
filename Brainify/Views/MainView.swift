@@ -3,8 +3,6 @@ import SwiftUI
 
 struct MainView: View {
     @StateObject var viewModel = MainViewViewModel()
-    @Environment(\.colorScheme) private var colorScheme: ColorScheme
-    @State private var isDarkMode = false
     
     var body: some View {
         if viewModel.isSignedIn, !viewModel.currentUserId.isEmpty {
@@ -38,7 +36,6 @@ struct MainView: View {
                 }
             
         }
-        .preferredColorScheme(SettingsData.mode == "light" ? .light : .dark)
     }
 }
 
