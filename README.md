@@ -2,13 +2,13 @@
 **Brainify** is a flashcard iOS app designed to help users study and memorize information efficiently. It's built using SwiftUI and follows the MVVM (model, view, view-model) architecture.
 
 ## Table of Contents
-- [[#Features]]
-- [[#Getting Started]]
-	- [[#Prerequisites]]
-	- [[#Installation]]
-	- [[#Usage]]
-	- [[#Contributing]]
-- [[#License]]
+- [Features](#features)
+- [Getting Started](#getting-started)
+	- [Prerequisites](#prerequisites)
+	- [Installation](#installation)
+	- [Usage](#usage)
+	- [Contributing](#contributing)
+- [License](#license)
 ## Features
 - User-friendly flashcard interface
 - Support for creating and editing decks
