@@ -9,7 +9,6 @@ struct FlashcardsView: View {
     
     private var userId: String
     @State private var deckId: String
-    
     private var nextView = false;
     
     init(userId: String, deckId: String){
@@ -21,13 +20,26 @@ struct FlashcardsView: View {
         self.deckId = deckId
     }
     
+    var sortedFlashcards: [Flashcard] {
+        switch SettingsData.sort {
+        case "AZ":
+            return flashcards.sorted(by: {$0.question < $1.question})
+        case "ZA":
+            return flashcards.sorted(by: {$0.question > $1.question})
+        case "Random":
+            return flashcards.shuffled()
+        default:
+            return flashcards
+        }
+    }
+    
     var body: some View {
         VStack {
             Spacer()
             VStack {
                 ScrollView(.horizontal, showsIndicators: false){
                     HStack{
-                        ForEach(flashcards) { flashcard in
+                        ForEach(sortedFlashcards) { flashcard in
                             SingleFlashcardView(flashcard: flashcard)
                                 .padding(6)
                         }
